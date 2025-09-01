@@ -1,0 +1,602 @@
+[
+    {
+        "Title":"A Light in the Attic",
+        "Price":"\u00c2\u00a351.77",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Tipping the Velvet",
+        "Price":"\u00c2\u00a353.74",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Soumission",
+        "Price":"\u00c2\u00a350.10",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Sharp Objects",
+        "Price":"\u00c2\u00a347.82",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Sapiens: A Brief History of Humankind",
+        "Price":"\u00c2\u00a354.23",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"The Requiem Red",
+        "Price":"\u00c2\u00a322.65",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Dirty Little Secrets of Getting Your Dream Job",
+        "Price":"\u00c2\u00a333.34",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+        "Price":"\u00c2\u00a317.93",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+        "Price":"\u00c2\u00a322.60",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Black Maria",
+        "Price":"\u00c2\u00a352.15",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Starving Hearts (Triangular Trade Trilogy, #1)",
+        "Price":"\u00c2\u00a313.99",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Shakespeare's Sonnets",
+        "Price":"\u00c2\u00a320.66",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Set Me Free",
+        "Price":"\u00c2\u00a317.46",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+        "Price":"\u00c2\u00a352.29",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Rip it Up and Start Again",
+        "Price":"\u00c2\u00a335.02",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+        "Price":"\u00c2\u00a357.25",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Olio",
+        "Price":"\u00c2\u00a323.88",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Mesaerion: The Best Science Fiction Stories 1800-1849",
+        "Price":"\u00c2\u00a337.59",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Libertarianism for Beginners",
+        "Price":"\u00c2\u00a351.33",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"It's Only the Himalayas",
+        "Price":"\u00c2\u00a345.17",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"In Her Wake",
+        "Price":"\u00c2\u00a312.84",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"How Music Works",
+        "Price":"\u00c2\u00a337.32",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",
+        "Price":"\u00c2\u00a330.52",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Chase Me (Paris Nights #2)",
+        "Price":"\u00c2\u00a325.27",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Black Dust",
+        "Price":"\u00c2\u00a334.53",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Birdsong: A Story in Pictures",
+        "Price":"\u00c2\u00a354.64",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana",
+        "Price":"\u00c2\u00a322.50",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Aladdin and His Wonderful Lamp",
+        "Price":"\u00c2\u00a353.13",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Worlds Elsewhere: Journeys Around Shakespeare\u00e2\u0080\u0099s Globe",
+        "Price":"\u00c2\u00a340.30",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Wall and Piece",
+        "Price":"\u00c2\u00a344.18",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Four Agreements: A Practical Guide to Personal Freedom",
+        "Price":"\u00c2\u00a317.66",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"The Five Love Languages: How to Express Heartfelt Commitment to Your Mate",
+        "Price":"\u00c2\u00a331.05",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Elephant Tree",
+        "Price":"\u00c2\u00a323.82",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"The Bear and the Piano",
+        "Price":"\u00c2\u00a336.89",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Sophie's World",
+        "Price":"\u00c2\u00a315.94",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Penny Maybe",
+        "Price":"\u00c2\u00a333.29",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Maude (1883-1993):She Grew Up with the country",
+        "Price":"\u00c2\u00a318.02",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"In a Dark, Dark Wood",
+        "Price":"\u00c2\u00a319.63",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Behind Closed Doors",
+        "Price":"\u00c2\u00a352.22",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"You can't bury them all: Poems",
+        "Price":"\u00c2\u00a333.63",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Slow States of Collapse: Poems",
+        "Price":"\u00c2\u00a357.31",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Reasons to Stay Alive",
+        "Price":"\u00c2\u00a326.41",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Private Paris (Private #10)",
+        "Price":"\u00c2\u00a347.61",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"#HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe.",
+        "Price":"\u00c2\u00a323.11",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Without Borders (Wanderlove #1)",
+        "Price":"\u00c2\u00a345.07",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"When We Collided",
+        "Price":"\u00c2\u00a331.77",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"We Love You, Charlie Freeman",
+        "Price":"\u00c2\u00a350.27",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Untitled Collection: Sabbath Poems 2014",
+        "Price":"\u00c2\u00a314.27",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Unseen City: The Majesty of Pigeons, the Discreet Charm of Snails & Other Wonders of the Urban Wilderness",
+        "Price":"\u00c2\u00a344.18",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Unicorn Tracks",
+        "Price":"\u00c2\u00a318.78",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Unbound: How Eight Technologies Made Us Human, Transformed Society, and Brought Our World to the Brink",
+        "Price":"\u00c2\u00a325.52",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Tsubasa: WoRLD CHRoNiCLE 2 (Tsubasa WoRLD CHRoNiCLE #2)",
+        "Price":"\u00c2\u00a316.28",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Throwing Rocks at the Google Bus: How Growth Became the Enemy of Prosperity",
+        "Price":"\u00c2\u00a331.12",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"This One Summer",
+        "Price":"\u00c2\u00a319.49",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Thirst",
+        "Price":"\u00c2\u00a317.27",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"The Torch Is Passed: A Harding Family Story",
+        "Price":"\u00c2\u00a319.09",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Secret of Dreadwillow Carse",
+        "Price":"\u00c2\u00a356.13",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Pioneer Woman Cooks: Dinnertime: Comfort Classics, Freezer Food, 16-Minute Meals, and Other Delicious Ways to Solve Supper!",
+        "Price":"\u00c2\u00a356.41",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Past Never Ends",
+        "Price":"\u00c2\u00a356.50",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Natural History of Us (The Fine Art of Pretending #2)",
+        "Price":"\u00c2\u00a345.22",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Nameless City (The Nameless City #1)",
+        "Price":"\u00c2\u00a338.16",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Murder That Never Was (Forensic Instincts #5)",
+        "Price":"\u00c2\u00a354.11",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+        "Price":"\u00c2\u00a342.96",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Mindfulness and Acceptance Workbook for Anxiety: A Guide to Breaking Free from Anxiety, Phobias, and Worry Using Acceptance and Commitment Therapy",
+        "Price":"\u00c2\u00a323.89",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing",
+        "Price":"\u00c2\u00a316.77",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Inefficiency Assassin: Time Management Tactics for Working Smarter, Not Longer",
+        "Price":"\u00c2\u00a320.59",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"The Gutsy Girl: Escapades for Your Life of Epic Adventure",
+        "Price":"\u00c2\u00a337.13",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Electric Pencil: Drawings from Inside State Hospital No. 3",
+        "Price":"\u00c2\u00a356.06",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Death of Humanity: and the Case for Life",
+        "Price":"\u00c2\u00a358.11",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"The Bulletproof Diet: Lose up to a Pound a Day, Reclaim Energy and Focus, Upgrade Your Life",
+        "Price":"\u00c2\u00a349.05",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Art Forger",
+        "Price":"\u00c2\u00a340.76",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"The Age of Genius: The Seventeenth Century and the Birth of the Modern Mind",
+        "Price":"\u00c2\u00a319.73",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"The Activist's Tao Te Ching: Ancient Advice for a Modern Revolution",
+        "Price":"\u00c2\u00a332.24",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Spark Joy: An Illustrated Master Class on the Art of Organizing and Tidying Up",
+        "Price":"\u00c2\u00a341.83",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Soul Reader",
+        "Price":"\u00c2\u00a339.58",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Security",
+        "Price":"\u00c2\u00a339.25",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Saga, Volume 6 (Saga (Collected Editions) #6)",
+        "Price":"\u00c2\u00a325.02",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Saga, Volume 5 (Saga (Collected Editions) #5)",
+        "Price":"\u00c2\u00a351.04",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Reskilling America: Learning to Labor in the Twenty-First Century",
+        "Price":"\u00c2\u00a319.83",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Rat Queens, Vol. 3: Demons (Rat Queens (Collected Editions) #11-15)",
+        "Price":"\u00c2\u00a350.40",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1)",
+        "Price":"\u00c2\u00a313.61",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Princess Between Worlds (Wide-Awake Princess #5)",
+        "Price":"\u00c2\u00a313.34",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"Pop Gun War, Volume 1: Gift",
+        "Price":"\u00c2\u00a318.97",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Political Suicide: Missteps, Peccadilloes, Bad Calls, Backroom Hijinx, Sordid Pasts, Rotten Breaks, and Just Plain Dumb Mistakes in the Annals of American Politics",
+        "Price":"\u00c2\u00a336.28",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Patience",
+        "Price":"\u00c2\u00a310.16",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Outcast, Vol. 1: A Darkness Surrounds Him (Outcast #1)",
+        "Price":"\u00c2\u00a315.44",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"orange: The Complete Collection 1 (orange: The Complete Collection #1)",
+        "Price":"\u00c2\u00a348.41",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Online Marketing for Busy Authors: A Step-By-Step Guide",
+        "Price":"\u00c2\u00a346.35",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"On a Midnight Clear",
+        "Price":"\u00c2\u00a314.07",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Obsidian (Lux #1)",
+        "Price":"\u00c2\u00a314.86",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"My Paris Kitchen: Recipes and Stories",
+        "Price":"\u00c2\u00a333.37",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Masks and Shadows",
+        "Price":"\u00c2\u00a356.40",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Mama Tried: Traditional Italian Cooking for the Screwed, Crude, Vegan, and Tattooed",
+        "Price":"\u00c2\u00a314.02",
+        "Availability":"In stock",
+        "Rating":"Four"
+    },
+    {
+        "Title":"Lumberjanes, Vol. 2: Friendship to the Max (Lumberjanes #5-8)",
+        "Price":"\u00c2\u00a346.91",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Lumberjanes, Vol. 1: Beware the Kitten Holy (Lumberjanes #1-4)",
+        "Price":"\u00c2\u00a345.61",
+        "Availability":"In stock",
+        "Rating":"Three"
+    },
+    {
+        "Title":"Lumberjanes Vol. 3: A Terrible Plan (Lumberjanes #9-12)",
+        "Price":"\u00c2\u00a319.92",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Layered: Baking, Building, and Styling Spectacular Cakes",
+        "Price":"\u00c2\u00a340.11",
+        "Availability":"In stock",
+        "Rating":"One"
+    },
+    {
+        "Title":"Judo: Seven Steps to Black Belt (an Introductory Guide for Beginners)",
+        "Price":"\u00c2\u00a353.90",
+        "Availability":"In stock",
+        "Rating":"Two"
+    },
+    {
+        "Title":"Join",
+        "Price":"\u00c2\u00a335.67",
+        "Availability":"In stock",
+        "Rating":"Five"
+    },
+    {
+        "Title":"In the Country We Love: My Family Divided",
+        "Price":"\u00c2\u00a322.00",
+        "Availability":"In stock",
+        "Rating":"Four"
+    }
+]
