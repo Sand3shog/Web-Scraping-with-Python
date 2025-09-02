@@ -11,7 +11,7 @@ try:
 
     print("Connection Successful!")
         
-    # A status code of 200 means "OK".
+    # A status code of 200 means "OK". test
     print(f"   - Server responded with status code: {response.status_code}")
     print(f"   - Received {len(response.text)} characters of HTML.")
 
