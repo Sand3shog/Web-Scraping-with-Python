@@ -3,3 +3,7 @@ beautifulsoup4
 pandas
 selenium
 webdriver-manager
+gspread 
+gspread-dataframe 
+google-auth 
+pandas

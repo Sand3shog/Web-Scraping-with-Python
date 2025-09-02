@@ -1,1 +1,4 @@
 .venv/
+Credentials.json
+.env
+project_info.json
