@@ -14,5 +14,8 @@ Network Control (Proxies, VPNs)
 Analyzing AJAX/XHR Network Requests
 
 # Create virtual env and install requirements
+# Selenium need a "driver" to let your code control your browser. Since user agent is Chrome, we need chromedriver
+Install from [here](https://googlechromelabs.github.io/chrome-for-testing/)
 
-Google Sheet Integration Result[https://docs.google.com/spreadsheets/d/1pW4HpAMXL0R0W7yDI1hFxUK75GKSNRVxHDhsjSI8WTw/edit?usp=sharing]
+[Google Sheet Integration Result](https://docs.google.com/spreadsheets/d/1pW4HpAMXL0R0W7yDI1hFxUK75GKSNRVxHDhsjSI8WTw/edit?usp=sharing)
+
