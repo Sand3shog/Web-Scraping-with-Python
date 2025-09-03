@@ -1,93 +1,116 @@
-# still learning this 
-# cannot decompress the response
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 import os
+import time
+import pandas as pd
+from bs4 import BeautifulSoup
 
+# --- Selenium Imports ---
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+
+# --- Global Constants ---
 OUTPUT_DIR = "data"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+DOMAIN_URL = "https://ekantipur.com"
+BASE_URL = f"{DOMAIN_URL}/entertainment"
 
-BASE_URL = "https://inshorts.com/en/read"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Accept-Language": "en-US,en;q=0.5"
-}
-
-def scrape_inshorts_page():
+def get_main_page_html_with_selenium() -> str | None:
     """
-    Scrapes the initial Inshorts page for all visible news articles.
+    Uses Selenium to open the main entertainment page, wait for JavaScript
+    to load the articles, and then returns the fully rendered HTML.
     """
-    print(f"Fetching news from {BASE_URL}...")
+    print("Setting up Selenium WebDriver...")
     
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
+
+    service = Service()
+    driver = None
+
     try:
-        # The requests library will automatically decompress the response
-        # when it sees the 'Content-Encoding' header from the server.
-        response = requests.get(BASE_URL, headers=HEADERS, timeout=15)
-        response.raise_for_status()
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        print(f"Fetching dynamically loaded content from {BASE_URL}...")
+        driver.get(BASE_URL)
+
+        print("Waiting for articles to load via JavaScript...")
+        WebDriverWait(driver, 20).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".teaser.offset"))
+        )
+        print("✅ Articles have loaded.")
         
-        # We now have the clean, decompressed HTML text
-        html_content = response.text
-        
-    except requests.exceptions.RequestException as e:
-        print(f"❌ Error fetching the webpage: {e}")
+        # for rendering
+        time.sleep(2)
+
+        return driver.page_source
+
+    except Exception as e:
+        print(f"❌ An error occurred with Selenium: {e}")
+        return None
+    finally:
+        if driver:
+            driver.quit()
+
+
+def main():
+    """
+    Main function to run the simplified scraper.
+    """
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
+    html_content = get_main_page_html_with_selenium()
+
+    if not html_content:
+        print("Failed to retrieve page content. Exiting.")
         return
 
     soup = BeautifulSoup(html_content, "html.parser")
+    article_cards = soup.find_all("div", class_="teaser offset")
     
-    # Using the class for the main card container we found in the readable HTML.
-    # If this fails again, it means the class name has changed.
-    news_cards = soup.find_all("div", class_="TfxplVx3RtbilOD2tqd6")
+    if not article_cards:
+        print("Could not find any article cards with class 'teaser offset'. The website layout may have changed again.")
+        return
     
-    if not news_cards:
-        print(" Could not find any news cards. The website's main class name has likely changed.")
-        # Save the (now readable) HTML for debugging, just in case.
-        with open("readable_debug_output.html", "w", encoding="utf-8") as f:
-            f.write(html_content)
-        print("   The HTML received by the script has been saved to 'readable_debug_output.html' for inspection.")
+    print(f"✅ Found {len(article_cards)} articles. Extracting details...")
+
+    # Extraction
+    all_articles_data = []
+    for card in article_cards:
+        # Safely find the headline, description, and author
+        headline_tag = card.find("h2")
+        headline = headline_tag.text.strip() if headline_tag else "No headline"
+
+        description_tag = card.find("p")
+        description = description_tag.text.strip() if description_tag else "No description"
+        author_tag = card.find("div", class_="author")
+        author = author_tag.text.strip() if author_tag else "No author"
+
+        all_articles_data.append({
+            "headline": headline,
+            "description": description,
+            "author": author
+        })
+
+    if not all_articles_data:
+        print("No articles were successfully parsed.")
         return
 
-    print(f"✅ Found {len(news_cards)} news articles. Parsing now...")
+    # Save the new, simpler data to CSV and JSON files
+    df = pd.DataFrame(all_articles_data)
     
-    all_headlines = []
-    for card in news_cards:
-        try:
-            headline = card.find("span", itemprop="headline").text.strip()
-            body = card.find("div", itemprop="articleBody").text.strip()
-            author = card.find("span", class_="author").text.strip()
-            date = card.find("span", class_="date").text.strip()
-            source_url_tag = card.find("a", class_="afA2Wlcd6bZojCgstcCi")
-            source_url = source_url_tag['href'] if source_url_tag else "N/A"
-            
-            all_headlines.append({
-                "headline": headline,
-                "summary": body,
-                "author": author,
-                "date": date,
-                "source_url": source_url
-            })
-        except AttributeError:
-            # This handles cases where a card might be structured differently (e.g., an ad)
-            print("--> Skipping a card with unexpected structure.")
-            continue
-
-    if not all_headlines:
-        print("No headlines were successfully parsed.")
-        return
-
-    df = pd.DataFrame(all_headlines)
+    csv_path = os.path.join(OUTPUT_DIR, "ekantipur_articles.csv")
+    df.to_csv(csv_path, index=False, encoding='utf-8-sig')
     
-    csv_path = os.path.join(OUTPUT_DIR, "news_headlines.csv")
-    df.to_csv(csv_path, index=False)
+    json_path = os.path.join(OUTPUT_DIR, "ekantipur_articles.json")
+    df.to_json(json_path, orient="records", indent=2, force_ascii=False)
     
-    json_path = os.path.join(OUTPUT_DIR, "news_headlines.json")
-    df.to_json(json_path, orient="records", indent=2)
-    
-    print(f"Success! Saved {len(df)} headlines to the '{OUTPUT_DIR}' directory.")
+    print(f"\nSuccess! Saved {len(df)} articles to the '{OUTPUT_DIR}' directory.")
 
 
 if __name__ == "__main__":
-    scrape_inshorts_page()
+    main()
